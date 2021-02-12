@@ -1,0 +1,30 @@
+h1 {
+    font-family: 'Courier New';
+  }
+  body {
+    background-color: #2A6F97;
+  }
+  
+  p {
+    text-align: center;
+    line-height: 42px;
+    font-weight: 600;
+    font-size: 28px;
+  }
+  .hability {
+    font-size: 20px;
+  }
+  .imag {
+    border-radius: 50%;
+  }
+  .horizontal ul li {
+    display: inline-block;
+    padding-right: 10px;
+    border-radius: 30%;
+  }
+  a {
+    background-color: #224153;
+    color: antiquewhite;
+    padding: 15px;
+    border-radius: 5px;
+  }
