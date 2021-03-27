@@ -1,14 +1,23 @@
 *{
-    font-family: 'Truculenta', sans-serif; ;
+    font-family: 'Truculenta', sans-serif;
+    list-style: none;
 }
-h1 {
-    font-family: 'Dancing Script', cursive;
-  }
+
   body {
-    background-color: #cedabe;
+    background: url('165434183_775561043380696_3066642578249241655_n.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
   }
-  
-  p {
+
+  #initial {
+    display: flex;
+    width: 100%;
+  }
+
+  #sub-title {
     text-align: center;
     line-height: 42px;
     font-weight: 600;
@@ -18,46 +27,90 @@ h1 {
     font-size: 20px;
   }
   
-  .header {
+  .containerHeader {
+    width: 100%;
+    height: 100%;
+    background: #10182b96;
+  }
 
-    background-color: #d3d9cb;
-    background-size: cover;
-    padding:60px,30px,40px,30px;
-    margin-top: 10px;
-    
+  .header-name {
+    width: 100%;
+    height: 100vh;
+    background-color: #DEE1DD;
+    font-weight: bold;
+    font-family: verdana, sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+    text-align: justify;
+    max-width: 100%;
+  }
+
+  #title-name {
+    text-shadow: 0 0 20px rgba(156, 153, 153, 0.836);
+    font-size: 7em;
+  }
+
+  #sub-title{
+    -webkit-text-fill-color: rgba(131, 131, 131, 0.466);
+    font-family: 'Montsserat', 'Helvetica', 'Source Sans', sans-serif;
+  }
+
+  #hability:hover, #resum:hover, #name:hover, #portfolio:hover {
    
   }
-  .header-name {
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 20px;
-    
 
+  #resum, #hability, #portfolio, #name {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: space-around;
+    height: 96px;
+    width: 16.4rem;
+    align-items:center;
+    text-transform: uppercase;
   }
-  li:hover{
-    background-color: #b2b6ad;
-    border-width: 5%;
-    margin: 10px;
+  #name {
+    padding-right: 100px;
+    background-color: #f5f5f5;
+    color: black;
   }
-  .horizontal ul li {
-    list-style: none;
-    display: inline-block;
-    vertical-align: top;
-    top: 10px;
-    margin: 10px;
-    
+
+  #resum {
+    background-color: #0f1626;
+  }
+
+  #hability{
+    background-color: #Ab9874;
   }
   
-  .header-photo {
-   padding: 10px;
-   background-color: #d3d9cb;
-   float: right;
+  #portfolio {
+    background-color: #ff533D;
   }
-  .header-resum {
-    max-width: 50%;
-    text-align: left;
-    float: left;
+
+  .main-content {
+    background: url('/malmes.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-  a {
-    text-decoration: none;
+  .habilityContainer {
+    background-color: #ab9874be;
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vmin;
+  }
+  .hability {
+    width: 400px;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
   }
