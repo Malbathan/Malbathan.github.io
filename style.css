@@ -59,10 +59,6 @@
     font-family: 'Montsserat', 'Helvetica', 'Source Sans', sans-serif;
   }
 
-  #hability:hover, #resum:hover, #name:hover, #portfolio:hover {
-   
-  }
-
   #resum, #hability, #portfolio, #name {
     display: flex;
     color: white;
