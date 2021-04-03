@@ -86,6 +86,7 @@
   
   #portfolio {
     background-color: #ff533D;
+    cursor: pointer;
   }
 
   .hide {
