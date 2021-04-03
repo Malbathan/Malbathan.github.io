@@ -53,7 +53,9 @@ body {
     background-color: #ffffff;
     width: 100%;
     padding: 1.3rem 0;
-    border: 1px solid lightgray;
+    border: 1px outset lightgray;
+    border-radius: 2%;
+    box-shadow: 2.5px 2.5px #afafafad;
 }
 
 .group:nth-child(1) {
