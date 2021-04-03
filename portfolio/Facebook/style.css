@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  height: 82px;
+  margin: auto;
+}
+
+.facebook-logo {
+  display: flex;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+header form {
+  align-items: center;
+}
+
+header input {
+  margin: 5px;
+  padding: 2px;
+  width: 170px;
+}
+
+header label {
+  margin-left: 5px;
+}
+
+header label , button {
+  color: white;
+}
+
+header button {
+  margin: 18px;
+  margin-top: 37px;
+  margin-left: 10px;
+  padding: 2.5px;
+  background-color: steelblue;
+  border: solid 1px rgb(41, 66, 87);
+}
+
+.main-content {
+  display: flex;
+  background-color: lavender;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin-left: 10px;
+  margin-right: 0;
+  align-content: flex-end;
+  justify-content: baseline;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
+}
+
+#facebook-networking {
+  width: 537px;
+}
+
+.right-content form {
+  display: flex;
+  flex-flow: wrap row;
+}
+
+.register-form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.right-content form input {
+  height: 20px;
+  padding: 14px;
+  border-radius: 5%;
+  border-color: #bdc7d8;
+  border: 1px solid #ccd0d5;
+  margin: 0.3rem;
+  margin-left: 0;
+}
+
+#cell-input , #new-password , #label-birth input {
+  width: 100%;
+}
+
+#label-gender input {
+  margin: 3px;
+  width: 10px;
+  height: 10px;
+}
+
+#facebook-register {
+  background: linear-gradient(#67ae55d2, #578843);
+  background-color: #69a74e;
+  box-shadow: inset 0 1px 1px #a4e388;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  padding: 10px 30px;
+  border-radius: 5%;
+  margin-top: 10px;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+}
+
+#nome-sobrenome {
+  display: flex;
+}
+
+#nome-sobrenome input {
+  width: 145px;
+}
+
+.linha label {
+  padding-right: 10px;
+}
+
+#gender-custom {
+  display: none;
+}
