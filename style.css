@@ -1,13 +1,14 @@
 *{
     font-family: 'Truculenta', sans-serif;
     list-style: none;
+    overflow: hidden;
 }
 
   body {
-    background: url('165434183_775561043380696_3066642578249241655_n.jpg');
+    background: url('/img/165434183_775561043380696_3066642578249241655_n.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 100%;
+    width: 100%;
     padding: 0;
     margin: 0;
   }
@@ -87,11 +88,39 @@
     background-color: #ff533D;
   }
 
+  .hide {
+    display: none;
+    cursor:pointer;
+  }
+
+  #menuHide{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  } 
+
+  .portfolioMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    top: 98px;
+    background-color: #ff543d79;
+    height: 96px;
+    width: 16rem;
+  }
+  .portfolioMenu a {
+    text-decoration: none;
+    color: white;
+  }
+
   .main-content {
-    background: url('/malmes.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   .habilityContainer {
     background-color: #ab9874be;
     display: flex;
