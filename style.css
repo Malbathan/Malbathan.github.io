@@ -91,18 +91,13 @@
 
   .hide {
     visibility:hidden;
-    cursor:pointer;
+    transition-timing-function: linear;
   }
 
   #menuHide{
     display: flex;
     justify-content: flex-end;
     width: 100%;
-  }
-
-  #menuHide {
-    display: flex;
-    top: 98px;
     background-color: #ff543d79;
     height: 96px;
   } 
@@ -114,10 +109,11 @@
     justify-content: center;
     cursor: pointer;
     position: fixed;
-    top: 98px;
+    margin-top: 98px;
     background-color: #ff543d79;
     height: 96px;
     width: 16rem;
+    transition: margin-top 0.5s;
   }
   
   .portfolioMenu a {
