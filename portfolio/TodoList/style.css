@@ -74,6 +74,11 @@ button {
   width: 140px;
 }
 
+.btn-direction {
+  display: flex;
+  flex-direction: row;
+}
+
 .buttons-header {
 
   display: flex;

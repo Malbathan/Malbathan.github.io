@@ -62,14 +62,16 @@ const img = document.createElement('img');
 img.setAttribute ('src', 'img/prancheta-com-ilustracao-vetorial-de-temporizador_138676-255-removebg-preview.png');
 fChild.append(img);
 
+const btnDirection = document.createElement('section');
+btnDirection.classList = "btn-direction";
 const buttons = document.createElement('section');
 buttons.classList = "buttons-header";
-// const bt2 = document.createElement('button');
-// bt2.id = 'mover-cima';
-// bt2.innerHTML = 'Mover(up)';
-// const bt3 = document.createElement('button');
-// bt3.id = 'mover-baixo';
-// bt3.innerHTML = 'Mover(down)';
+const bt2 = document.createElement('button');
+bt2.id = 'mover-cima';
+bt2.innerHTML = 'Mover(up)';
+const bt3 = document.createElement('button');
+bt3.id = 'mover-baixo';
+bt3.innerHTML = 'Mover(down)';
 const bt4 = document.createElement('button');
 bt4.id = 'remover-selecionado';
 bt4.innerHTML = 'Remove(selected)';
@@ -87,22 +89,37 @@ bt7.id = 'save';
 bt7.innerHTML = 'Save';
 
 
-// buttons.append(bt2);
-// buttons.append(bt3);
+btnDirection.append(bt2);
+btnDirection.append(bt3);
 buttons.append(bt4);
 buttons.append(bt5);
 buttons.append(bt6);
 buttons.append(bt7);
 
+fChild.append(btnDirection);
 fChild.append(buttons);
 
 function moveUp() {
-
+  const selected = document.querySelector('.selected');
+  if (selected && selected.previousSibling) {
+    const upper = selected.previousSibling;
+    listOrder.removeChild(upper);
+    selected.insertAdjacentElement('afterend', upper);
+  }
 }
+
+bt2.addEventListener('click', moveUp);
 
 function moveDown(){
-
+  const selected = document.querySelector('.selected');
+  if (selected && selected.nextElementSibling) {
+    const lower = selected.nextElementSibling;
+    listOrder.removeChild(lower);
+    selected.insertAdjacentElement('beforebegin', lower);
+  }
 }
+
+bt3.addEventListener('click', moveDown);
 
 const selectList = listOrder.children;
 
