@@ -1,16 +1,19 @@
+// preciso refatorar as operações matematicas para não ter conflito de tamanho
+// ja que resolvi fazer em um formato menor, para encaixar no meu 'gameBoy'
 let canvas = document.getElementById('snake');
 let context = canvas.getContext('2d');
-let box = 32;
+let box = 20;
 let snake = [];
 snake [0] = {
-  x: 4 * box,
-  y: 4 * box
+  x: 8 * box,
+  y: 8 * box
 }
 
 let direction = "right";
+
 let food = {
-  x: Math.floor(Math.random() * 15 + 1)* box,
-  y: Math.floor(Math.random() * 15 + 1)* box
+  x: Math.floor(Math.random() * 12 + 1) * box,
+  y: Math.floor(Math.random() * 12 + 1) * box
 };
 
 const makeBG = () => {
@@ -39,10 +42,17 @@ function update(event) {
 }
 
 const startGame = () => {
-  if (snake[0].x > 15 * box && direction == "right") snake[0].x = 0;
-  if (snake[0].x < 0 && direction == "left") snake[0].x = 16 * box;
-  if (snake[0].y > 15 * box && direction == "down") snake[0].y = 0;
-  if (snake[0].y < 0 && direction == "up") snake[0].y = 16 * box;
+  if (snake[0].x > 13 * box && direction == "right") snake[0].x = 0;
+  if (snake[0].x < 0 && direction == "left") snake[0].x = 13 * box;
+  if (snake[0].y > 13 * box && direction == "down") snake[0].y = 0;
+  if (snake[0].y < 0 && direction == "up") snake[0].y = 13 * box;
+
+  for( i = 1; i < snake.length; i += 1){
+    if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
+      clearInterval(startGame);
+      alert('Game Over :T');
+    }
+  };
 
   makeBG();
   makeSnake();
@@ -56,7 +66,12 @@ const startGame = () => {
   if (direction == "up") snakeY -= box;
   if (direction == "down") snakeY += box;
 
-  snake.pop();
+  if (snakeX != food.x || snakeY != food.y) {
+    snake.pop();
+  } else {
+    food.x = Math.floor(Math.random() * 12 + 1) * box;
+    food.y = Math.floor(Math.random() * 12 + 1) * box
+  }
 
   let newHead = {
     x: snakeX,

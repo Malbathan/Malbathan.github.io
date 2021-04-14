@@ -1,10 +1,14 @@
-/* body {
+body {
     display: flex;
     justify-content: center; 
     background-color: darksalmon;
+    align-items: center;
+    height: 95vh;
+    width: 95;
+    flex-direction: column;
 }
 
-#gameBoy, canvas {
+#gameBoy,  canvas{
     border:20px solid black;
     border-radius: 15%;
 }
@@ -12,6 +16,7 @@
 canvas{ 
     position: absolute;
     align-self: center;
+    padding: 2px;
 }
 
 #gameBoy {
@@ -168,4 +173,4 @@ canvas{
 #btns {
     display: flex;
     align-items: center;
-} */
+}
