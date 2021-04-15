@@ -9,7 +9,6 @@
     box-sizing: border-box;
 }
 
-/*elementos base*/
 body{
    background: var(--branca);
    font-family:'fantasy';
