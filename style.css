@@ -2,6 +2,8 @@
     font-family: 'Truculenta', sans-serif;
     list-style: none;
     overflow: hidden;
+    box-sizing: border-box
+    ;
 }
 
   body {
