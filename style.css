@@ -73,6 +73,7 @@
     align-items:center;
     text-transform: uppercase;
   }
+
   #name {
     padding-right: 100px;
     background-color: #f5f5f5;
@@ -152,12 +153,10 @@
 
 @media only screen and (min-width:360) and (max-width:640) {
     * {
-        font-size: clamp(1em, 1em + 1vw, 1.5em);
+        font-size: clamp(0.7rem, 0.7rem + 1vw, 0.7em)
     }
-    
-    .header-name {
-    width: 50%;
-    height: 50vh;
-    }
-
+    #resum, #hability, #portfolio, #name {
+        display: flex;
+        justify-content: center;
+  }
 }
