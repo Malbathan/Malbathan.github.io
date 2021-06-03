@@ -154,4 +154,10 @@
     * {
         font-size: clamp(1em, 1em + 1vw, 1.5em);
     }
+    
+    .header-name {
+    width: 50%;
+    height: 50vh;
+    }
+
 }
