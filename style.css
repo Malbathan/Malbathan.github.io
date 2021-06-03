@@ -1,3 +1,19 @@
+@media only screen and (min-width:360px) and (max-width:490px){
+  .header-name{
+    font-size: 2.2vw;
+  }
+  
+  #resum, #hability, #portfolio, #name {
+    font-size: 2.9vw;
+    justify-content: start;
+    align-content: flex-start;
+  }
+  
+  .hability{
+    font-size: 0.5vw;
+  }
+}
+
 *{
     font-family: 'Truculenta', sans-serif;
     list-style: none;
@@ -150,13 +166,3 @@
     flex-wrap: wrap;
     padding-inline-start: 0;
   }
-
-@media only screen and (min-width:360) and (max-width:640) {
-    * {
-        font-size: clamp(0.7rem, 0.7rem + 1vw, 0.7em)
-    }
-    #resum, #hability, #portfolio, #name {
-        display: flex;
-        justify-content: center;
-  }
-}
