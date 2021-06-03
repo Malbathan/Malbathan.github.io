@@ -7,12 +7,11 @@
 
 @import "compass/css3";
 
-@media only screen and (min-width:360px) and (max-width:490px){
-  button {
-    margin: 0.3rem;
-    font-size:0.8rem;
-  }
+*{
+  box-sizing: border-box;
+}
 
+@media only screen and (min-width:360px) and (max-width:490px){
   input{
     width: 92%;
   }
@@ -20,10 +19,6 @@
   #criar-tarefa{
     width:3rem;
   }
-}
-
-*{
-  box-sizing: border-box;
 }
 
 body {
@@ -90,8 +85,8 @@ li{
 }
 
 button {
-  margin: 5px;
-  width: 140px;
+  margin: 0.3rem;
+  font-size:0.8rem;
 }
 
 .btn-direction {
