@@ -134,7 +134,6 @@
     position: fixed;
     margin-top: 98px;
     background-color: #ff543d79;
-    height: 96px;
     width: 16rem;
     transition: margin-top 0.5s;
   }
