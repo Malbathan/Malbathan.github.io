@@ -22,7 +22,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <Router>
+      <Router  basename={process.env.PUBLIC_URL}>
         <Notification showModal={showModal} setShowModal={setShowModal} />
         <button onClick={openModal} id="notification" style={{display:"none"}}></button>
         <NavigationBar />
